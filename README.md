@@ -1,12 +1,12 @@
 ## MICROSERVIÇO COM SPRING BOOT + APLICAÇÃO RODANDO EM DOCKER ## 
 Rodar aplicação : 
 
-1- Baixe o projeto : url(https://github.com/Cleonides/RepositorioMicroservico.git)  ** (\**)
-2- Rode o script.sh (cmd ou terminal) entre na pasta raiz do projeto e execute : ./script.sh  ** (\**)
- 2.1 - Se for Linux : sudo ./script.sh  ** (\**)
-3- Http://localhost:8080  ** (\**)
+1- Baixe o projeto : url(https://github.com/Cleonides/RepositorioMicroservico.git)  <br/>
+2- Rode o script.sh (cmd ou terminal) entre na pasta raiz do projeto e execute : ./script.sh <br/>
+ 2.1 - Se for Linux : sudo ./script.sh  <br/>
+3- Http://localhost:8080  <br/>
 
-via curl usa os comando para fazer o CRUD  ** (\**)
+via curl usa os comando para fazer o CRUD <br/>
 #Criar usuarios 
 curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Luquinha\", \"age\": 19}" localhost:8080/persons
 curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Pedrinho\", \"age\": 29}" localhost:8080/persons
