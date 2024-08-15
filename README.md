@@ -8,15 +8,16 @@ Rodar aplicação :
 
 via curl usa os comando para fazer o CRUD <br/>
 #Criar usuarios 
-curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Luquinha\", \"age\": 19}" localhost:8080/persons
-curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Pedrinho\", \"age\": 29}" localhost:8080/persons
-curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Antonio\", \"age\":  39}" localhost:8080/persons
+curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Luquinha\", \"age\": 19}" localhost:8080/persons <br/>
+curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Pedrinho\", \"age\": 29}" localhost:8080/persons <br/>
+curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Antonio\", \"age\":  39}" localhost:8080/persons <br/>
 
 #Consultar usuarios 
-CURL -X GET -i http://localhost:8080/persons
+CURL -X GET -i http://localhost:8080/persons <br/>
 
 #Atualizar usuarios
-curl -X PUT -H "Content-Type: application/json" -d "{\"name\": \"Julninho\", \"age\": 19}" localhost:8080/persons/1 
+curl -X PUT -H "Content-Type: application/json" -d "{\"name\": \"Julninho\", \"age\": 19}" localhost:8080/persons/1  <br/>
 
 #Deletar usuarios
-curl -v -X DELETE localhost:8080/persons/7
+curl -v -X DELETE localhost:8080/persons/7 <br/>
+ 
