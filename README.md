@@ -6,7 +6,7 @@ Rodar aplicação :
  2.1 - Se for Linux : sudo ./script.sh  <br/>
 3- Http://localhost:8080  <br/>
 
-via curl usa os comando para fazer o CRUD <br/>
+Via curl use os comandos para fazer o CRUD <br/>
 #Criar usuarios 
 curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Luquinha\", \"age\": 19}" localhost:8080/persons <br/>
 curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Pedrinho\", \"age\": 29}" localhost:8080/persons <br/>
