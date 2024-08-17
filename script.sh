@@ -1,10 +1,10 @@
-# parar o container atual
-docker stop container-aula
-# remove o container
-docker rm container-aula
-# remove a imagem
-docker rmi aula-api
-# cria a imagem com nome aula-api
+docker-compose down
+# remove os dois containers
+docker rmi -f aula-api
+docker rmi -f postgres
+# remove as duas images
 docker build -t aula-api .
-# roda o container ligado a imagem aula - sobe o servidor
-docker run -d --name container-aula -p 8080:8080 aula-api
+#roda a imagem da aplicação
+docker-compose up -d
+#roda o container da aplicação.
+

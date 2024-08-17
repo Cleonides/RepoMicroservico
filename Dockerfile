@@ -7,10 +7,11 @@ LABEL maintainer="Kabal <knotkabal@gmail.com>"
 WORKDIR /app
 #cria a pasta no container
 
-COPY . .
+COPY pom.xml .
+COPY src/ ./src/
 # copia tudo local para a imagem docker ([.]esquerda-local, [.]direita-imagem)
 
-RUN mvn package
+RUN mvn package -Dmaven.test.skip
 #roda o maven e atualiza todos as dependências do projeto
 
 EXPOSE 8080
@@ -19,14 +20,3 @@ EXPOSE 8080
 CMD ["java", "-jar", "target/event-microservice-0.0.1-SNAPSHOT.jar"]
 # Roda o jar passando o caminho do .jar gerado pelo maven
 
-
-
-
-
-##############
-#FROM openjdk:17-jdk
-#
-#COPY target/event-microservice-0.0.1-SNAPSHOT.jar /app/app.jar
-#
-#CMD ["java", "-jar", "/app/app.jar"]
-# Start with maven:3.8.7-eclipse-temurin-19-alpine base image
