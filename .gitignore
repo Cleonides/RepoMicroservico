@@ -1,0 +1,5 @@
+postgres-data/*
+#postgres-data/base
+#postgres-data/base/16384
+
+
