@@ -77,7 +77,7 @@ Windows:<p></p>
 curl -X PUT -H "Content-Type: application/json" -d "{\"name\": \"Julninho\", \"age\": 19}" localhost:8080/persons/1  <br/>
 <p></p>
 Linux:<p></p>
-curl -X POST -H "Content-Type: application/json" -d '{"name": "Julninho", "age": 19}' localhost:8080/persons1  <p></p>
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "Julninho", "age": 19}' localhost:8080/persons/1  <p></p>
 
 #Deletar usuarios <br/>
 curl -v -X DELETE http://localhost:8080/persons/7 <br/>
