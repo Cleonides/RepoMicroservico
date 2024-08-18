@@ -15,6 +15,15 @@ curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Antonio\", \"a
 #Consultar usuarios  <br/>
 CURL -X GET -i http://localhost:8080/persons <br/>
 
+#Se for uma máquina linux , precisa atualizar a versão do docker-compose atual(v2.28.1): <br/>
+sudo rm /usr/local/bin/docker-compose ou /usr/bin/docker-compose<br/>
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose<br/>
+sudo chmod +x /usr/local/bin/docker-compose
+
+
+
+
+
 #Atualizar usuarios <br/>
 curl -X PUT -H "Content-Type: application/json" -d "{\"name\": \"Julninho\", \"age\": 19}" localhost:8080/persons/1  <br/>
 
