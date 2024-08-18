@@ -59,12 +59,12 @@ GET DEFAULT - http://localhost:/ <br/>
 
 Via curl use os comandos para fazer o CRUD <br/>
 #Criar usuarios   <p></p>
-Windows : 
+Windows : <p></p>
 curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Luquinha\", \"age\": 19}" localhost:8080/persons <br/>
 curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Pedrinho\", \"age\": 29}" localhost:8080/persons <br/>
 curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Antonio\", \"age\":  39}" localhost:8080/persons <br/>
 <p></p>
-Linux : 
+Linux :<p></p> 
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Luquinha", "age": 19}' localhost:8080/persons<br/>
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Luquinha", "age": 19}' localhost:8080/persons<br/>
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Luquinha", "age": 19}' localhost:8080/persons<br/>
@@ -73,10 +73,10 @@ curl -X POST -H "Content-Type: application/json" -d '{"name": "Luquinha", "age":
 CURL -X GET -i http://localhost:8080/persons  <p></p>
 
 #Atualizar usuarios <br/>
-Windows:
+Windows:<p></p>
 curl -X PUT -H "Content-Type: application/json" -d "{\"name\": \"Julninho\", \"age\": 19}" localhost:8080/persons/1  <br/>
 <p></p>
-Linux:
+Linux:<p></p>
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Julninho", "age": 19}' localhost:8080/persons1  <p></p>
 
 #Deletar usuarios <br/>
