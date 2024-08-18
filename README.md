@@ -66,8 +66,8 @@ curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Antonio\", \"a
 <p></p>
 Linux :<p></p> 
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Luquinha", "age": 19}' localhost:8080/persons<br/>
-curl -X POST -H "Content-Type: application/json" -d '{"name": "Luquinha", "age": 19}' localhost:8080/persons<br/>
-curl -X POST -H "Content-Type: application/json" -d '{"name": "Luquinha", "age": 19}' localhost:8080/persons<br/>
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Pedrinho", "age": 29}' localhost:8080/persons<br/>
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Antonio", "age": 39}' localhost:8080/persons<br/>
 <p></p>
 #Consultar usuarios  <br/>
 CURL -X GET -i http://localhost:8080/persons  <p></p>
