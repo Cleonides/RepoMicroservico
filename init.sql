@@ -1,5 +1,1 @@
-CREATE DATABASE rm_dados;
-
-
-
-
+CREATE database rm_dados AUTHORIZATION postgres;

@@ -13,11 +13,11 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/persons")
-public class PersonResource {
+public class MicroServicePE {
 
     private final PersonRepository personReposity;
 
-    public PersonResource(PersonRepository personReposity){
+    public MicroServicePE(PersonRepository personReposity){
         super();
         this.personReposity = personReposity;
     }

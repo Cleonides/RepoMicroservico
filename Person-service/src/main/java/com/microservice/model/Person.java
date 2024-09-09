@@ -1,5 +1,4 @@
-package com.example.demo.models;
-
+package com.microservice.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,14 +15,24 @@ public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Integer id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
 
+    @Column(name = "cpf")
+    private String cpf;
+
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "fone")
+    private String fone;
+
     @Column(name = "age")
     private int age;
 
-
-
+    @Column(name = "adress_id")
+    private Long adressId;
 }
+

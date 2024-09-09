@@ -8,22 +8,22 @@ services:
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - ./postgres-data:/var/lib/postgresql/data
-    networks:
-      - postgres-compose-network
+#    networks:
+#      - postgres-compose-network
 
-  app-final:
-    image: aula-api
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-final:5432/rm_dados
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: post123
-    ports:
-      - "8080:8080"
-    depends_on:
-      - postgres-final
-    networks:
-      - postgres-compose-network
-
-networks:
-  postgres-compose-network:
-    driver: bridge
+#  app-final:
+#    image: aula-api
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-final:5432/rm_dados
+#      SPRING_DATASOURCE_USERNAME: postgres
+#      SPRING_DATASOURCE_PASSWORD: post123
+#    ports:
+#      - "8080:8080"
+#    depends_on:
+#      - postgres-final
+#    networks:
+#      - postgres-compose-network
+#
+#networks:
+#  postgres-compose-network:
+#    driver: bridge

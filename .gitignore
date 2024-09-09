@@ -3,3 +3,5 @@ postgres-data/*
 #postgres-data/base/16384
 
 
+/Adress-service/target/
+/Person-service/target/

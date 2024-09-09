@@ -1,3 +1,4 @@
+docker-login
 docker-compose down
 # remove os dois containers
 docker rmi -f aula-api
