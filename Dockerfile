@@ -7,16 +7,15 @@ LABEL maintainer="Kabal <knotkabal@gmail.com>"
 WORKDIR /app
 #cria a pasta no container
 
-COPY pom.xml .
-COPY src/ ./src/
+COPY . .
 # copia tudo local para a imagem docker ([.]esquerda-local, [.]direita-imagem)
 
-RUN mvn package -Dmaven.test.skip
+RUN mvn clean package -Dmaven.test.skip
 #roda o maven e atualiza todos as dependências do projeto
 
 EXPOSE 8080
 #Porta para rodar a aplicação.
 
-CMD ["java", "-jar", "target/event-microservice-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "../target/Person-service-0.0.1-SNAPSHOT.jar"]
 # Roda o jar passando o caminho do .jar gerado pelo maven
 

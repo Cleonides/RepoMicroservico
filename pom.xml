@@ -6,12 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.test</groupId>
 	<artifactId>event-microservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>event-microservice</name>
+    <packaging>pom</packaging>
+    <name>event-microservice</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,11 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>Adress-service</module>
+		<module>Person-service</module>
+	</modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
@@ -31,7 +36,7 @@
 		<spring-cloud.version>2023.0.3</spring-cloud.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
-	<dependencies>
+ 	<dependencies>
 		<dependency>
 			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -98,9 +103,14 @@
 					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<!-- Certifique-se de que não há configurações conflitantes -->
+				</configuration>
+			</plugin>
 		</plugins>
-
-
 	</build>
-
 </project>
